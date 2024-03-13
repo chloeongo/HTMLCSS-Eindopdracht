@@ -1,0 +1,86 @@
+body{
+    background-image: url(images/background.png);
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Header{
+    margin: 0;
+    background-color: azure;
+    width: 100%;
+    height: 70px;
+    padding-left: 20px;
+}
+
+#HeaderImg{
+width: 70px;
+height: 70px;
+}
+
+.MainMenu {
+    position: fixed;
+    bottom: 0;
+    width: 80rem;
+    height: 30rem;
+    background-color: rgba(240, 255, 255, 0.5);
+    border-radius: 20rem 20rem 0 0;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 8%;
+    margin-right: 7%;
+    
+    
+}
+
+.MainMenu > p{
+    position: fixed;
+    font-family: "Lato";
+    font-size: 20px;
+    text-align: center;
+    bottom: 160px;
+    left: 190px;
+    text-shadow:  
+   -1px -1px azure,  
+    1px -1px azure,
+   -1px  1px azure,
+    1px  1px azure; ;
+
+}
+
+#MainText{
+    position: fixed;
+    font-family: "Madimi One", sans-serif;
+    font-size: 70px;
+    bottom: 240px;
+    left: 580px;
+
+}
+
+.Footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    background-color: azure;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+}
+
+.Footer > a{
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-family: "Lato";
+    text-align: center;
+}
+
+
+.Footer > a:hover{
+color: #818181;
+}
