@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Anime Recs</title>
         <link rel="stylesheet" href="suggestions.css">
         <link rel="icon" type="image/x-icon" href="../images/favicon.png">
@@ -9,8 +10,54 @@
     </head>
 <body>
     <div class="Header">
-          <img src="../images/favicon.png" id="HeaderImg">
-      </div>
+        <img src="../images/favicon.png" id="HeaderImg">
+          <a href="../index.html">
+            <button>Home</button>
+          </a>
+          <a href="../Library/library.html">
+            <button>Library</button>
+          </a>
+          <a href="../suggestions/suggestions.html">
+            <button>Suggestions</button>
+          </a>
+    </div>
+
+    <h1>Leave a recommendation!</h1>
+    <p>
+        Share your favorite anime recommendations with us! <br>
+        Whether it's a thrilling adventure or a heartwarming story, <br>
+        we'd love to hear your suggestions to help fellow fans discover their next favorite series.
+    </p>
+<form class="suggestion-form">
+  <fieldset>
+    
+    <legend>About my anime...</legend>
+
+    <label for="anime-name">Anime name:</label><br>
+    <input type="text" 
+    id="anime-name" 
+    name="anime-name"
+    class="input-form" 
+    placeholder="Tell us your favorite anime!"
+    required>
+<br>
+    <label for="anime-desc">Give us a summary of your anime:</label><br>
+    <input type="text" 
+    id="anime-desc" 
+    name="anime-desc" 
+    class="input-form"
+    placeholder="Ash woke up late and got a yellow pokemon..."
+    required>
+<br>
+    <label for="anime-rec">I recommend this because:</label><br>
+    <input type="text" 
+    id="anime-rec" 
+    name="anime-rec" 
+    class="input-form"
+    placeholder="It's a classic and time-less"
+    required>
+  </fieldset>
+</form>
 
   <div class="Footer">
     <a href="https://github.com/chloeongo" title="My Github profile" target="_blank">

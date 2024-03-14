@@ -1,27 +1,75 @@
 body{
-    background-image: url(images/background.png);
     background-size: cover;
     margin: 0;
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-image: url(../images/forms.png);
 }
 
 .Header{
+    display: flex;
     margin: 0;
     background-color: azure;
     width: 100%;
     height: 70px;
     padding-left: 20px;
+    justify-content: space-evenly;
+}
+
+.Header > a{
+    flex-grow: 1;
+    display: flex;
+    text-decoration: none;
+    padding-left: 15%;
+}
+
+button:hover{
+color: #818181;
+cursor: pointer;
+}
+
+button{
+    color: #000;
+    font-family: "Lato";
+    text-align: center;
+    background-color: azure;
+    font-size: 17px;
+    border: 0;
 }
 
 #HeaderImg{
+    display: flex;
 width: 70px;
 height: 70px;
+margin-right: auto;
+}
+
+h1{
+    font-family: "Madimi One";
+}
+
+p{
+    font-family: "Lato";
+}
+
+label{
+    font-family: "Madimi One";
+}
+
+input{
+    font-family: "Lato";
+    border-radius: 10px;
+}
+
+.input-form{
+    width: 25%;
+    text-align: left;
+    vertical-align: text-top;
 }
 
 .Footer{
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 70px;
@@ -30,7 +78,7 @@ height: 70px;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-
+    margin-top: 20px;
 }
 
 .Footer > a{
