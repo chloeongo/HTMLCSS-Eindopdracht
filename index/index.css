@@ -15,6 +15,18 @@ body{
     padding-left: 20px;
 }
 
+.Header > a{
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.Header > a:hover{
+color: #818181;
+}
+
 #HeaderImg{
 width: 70px;
 height: 70px;
