@@ -53,6 +53,19 @@ p{
     font-family: "Lato";
 }
 
+.form-text{
+    padding-left: 15%;
+}
+
+legend{
+    font-family: "Madimi One";
+    font-size: 20px;
+}
+
+fieldset{
+    border: none;
+}
+
 label{
     font-family: "Madimi One";
 }
@@ -60,6 +73,10 @@ label{
 input{
     font-family: "Lato";
     border-radius: 10px;
+}
+
+.suggestion-form{
+    padding-left: 15%;
 }
 
 .input-form{

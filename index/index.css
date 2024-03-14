@@ -26,6 +26,7 @@ body{
 
 button:hover{
 color: #818181;
+cursor: pointer;
 }
 
 button{
