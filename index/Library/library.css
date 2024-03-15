@@ -1,5 +1,5 @@
 body{
-    background-image: url(images/background.png);
+    background-image: url(../images/aotbg.png);
     background-size: cover;
     margin: 0;
     overflow-x: hidden;
@@ -39,14 +39,29 @@ button{
 }
 
 #HeaderImg{
-    display: flex;
+    display: fixed;
 width: 70px;
 height: 70px;
 margin-right: auto;
+margin-top: 0;
 }
 
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img {
+    width: 280px;
+    height: 425px;
+    margin-top: 20px;
+}
+
+
 .Footer{
-    position: fixed;
+    position: flex;
     bottom: 0;
     width: 100%;
     height: 70px;
@@ -55,7 +70,7 @@ margin-right: auto;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-
+    margin-top: 20px;
 }
 
 .Footer > a{

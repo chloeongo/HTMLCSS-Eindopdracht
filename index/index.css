@@ -92,7 +92,7 @@ margin-right: auto;
     padding: 20px;
     background-color: azure;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-evenly;
 
 }
