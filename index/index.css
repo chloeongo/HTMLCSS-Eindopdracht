@@ -7,7 +7,7 @@ body{
     background-attachment: fixed;
 }
 
-.Header{
+.Header{ /*display:grid gebruiken */
     display: flex;
     margin: 0;
     background-color: azure;
@@ -84,7 +84,7 @@ margin-right: auto;
 
 }
 
-.Footer{
+.Footer{ /*display:grid gebruiken */
     position: fixed;
     bottom: 0;
     width: 100%;
