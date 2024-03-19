@@ -5,28 +5,41 @@ body{
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 125vh;
 }
 
-.Header{ /*display:grid gebruiken */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 3vw;
+        overflow-x: hidden;
+
+    }
+    .MainText{
+text-align: center;
+    }
+}
+
+header {
     display: flex;
-    margin: 0;
     background-color: azure;
+    align-items: center;
+    justify-content: space-evenly; /* Align child elements evenly */
+    height: min-content;
+    position: relative;
     width: 100%;
-    height: 70px;
-    padding-left: 20px;
-    justify-content: space-evenly;
+    top: 0;
 }
 
-.Header > a{
-    flex-grow: 1;
+header > a {
     display: flex;
     text-decoration: none;
-    padding-left: 15%;
+    align-items: center; /* Align button contents vertically */
 }
-
 button:hover{
-color: #818181;
-cursor: pointer;
+    color: #818181;
+    cursor: pointer;
 }
 
 button{
@@ -40,9 +53,11 @@ button{
 
 #HeaderImg{
     display: flex;
-width: 70px;
-height: 70px;
-margin-right: auto;
+    width: 70px;
+    height: 70px;
+    margin-right: auto;
+    padding-left: 15%;
+
 }
 
 .MainMenu {
@@ -65,8 +80,9 @@ margin-right: auto;
     font-family: "Lato";
     font-size: 20px;
     text-align: center;
+    padding-top: 3vh;
     position: fixed;
-    bottom: 19%;
+    bottom: 15vh;
     left: 13%;
     right: 9%;
     text-shadow:  
@@ -80,35 +96,32 @@ margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     position: fixed;
-    bottom: 35%;
-    left: 37%;
-    right: 63%;
     font-family: "Madimi One", sans-serif;
-    font-size: 70px;
+    font-size: 450%;
+    text-align: center;
 }
 
-.Footer{ /*display:grid gebruiken */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    padding: 20px;
-    background-color: azure;
+footer{
     display: flex;
+    background-color: azure;
     align-items: center;
     justify-content: space-evenly;
-
+    height: min-content;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
 
-.Footer > a{
+footer > a{
     display: flex;
     text-decoration: none;
     color: #000;
     font-family: "Lato";
     text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-
-.Footer > a:hover{
+footer > a:hover{
 color: #818181;
 }
