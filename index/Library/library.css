@@ -52,7 +52,6 @@ header > a:hover{
     display: flex;
     width: 60px;
     height: 60px;
-    align-self: flex-start;
     position: relative;
     left: 3px;
 }
@@ -64,10 +63,11 @@ header > a:hover{
     justify-content: space-around;
 }
 
-img {
+.ani-pic {
     width: 280px;
     height: 425px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 

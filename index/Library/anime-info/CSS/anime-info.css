@@ -1,5 +1,5 @@
 body{
-    background-image: url(../../images/librarybg.png);
+    background-image: url(../../../images/librarybg.png);
     background-size: cover;
     margin: 0;
     overflow-x: hidden;
@@ -7,18 +7,6 @@ body{
     background-attachment: fixed;
     display: grid;
     grid-template-rows: auto 1fr auto;
-}
-
-@media (max-width: 600px) {
-    body {
-        font-size: 3vw;
-        overflow-x: hidden;
-
-    }
-    .MainText{
-        text-align: center;
-    }
-
 }
 
 header{
@@ -64,6 +52,8 @@ button{
     font-size: 25px;
     border: none;
     border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 .ani-info{
@@ -71,7 +61,8 @@ button{
     flex-wrap: wrap;
     background-color: rgba(240, 248, 255, 0.547);
     justify-content: space-evenly;
-
+    margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 img{
@@ -100,12 +91,11 @@ h3{
 
 footer{
     display: flex;
-    flex-wrap: nowrap;
     background-color: azure;
     align-items: center;
     justify-content: space-evenly;
     height: min-content;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -117,9 +107,11 @@ footer > a{
     font-family: "Lato";
     text-align: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 footer > a:hover{
 color: #818181;
 }
+
 
