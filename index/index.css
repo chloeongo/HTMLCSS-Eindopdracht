@@ -10,54 +10,50 @@ body{
     min-height: 125vh;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 600px) {
     body {
         font-size: 3vw;
         overflow-x: hidden;
 
     }
     .MainText{
-text-align: center;
+        text-align: center;
     }
+
 }
 
-header {
+header{
     display: flex;
+    width: 100%;
     background-color: azure;
     align-items: center;
-    justify-content: space-evenly; /* Align child elements evenly */
+    justify-content: space-evenly;
     height: min-content;
     position: relative;
-    width: 100%;
     top: 0;
 }
 
-header > a {
+header > a{
     display: flex;
     text-decoration: none;
-    align-items: center; /* Align button contents vertically */
+    color: #000;
+    font-family: "Lato";
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-button:hover{
+
+header > a:hover{
     color: #818181;
     cursor: pointer;
 }
 
-button{
-    color: #000;
-    font-family: "Lato";
-    text-align: center;
-    background-color: azure;
-    font-size: 17px;
-    border: 0;
-}
-
 #HeaderImg{
     display: flex;
-    width: 70px;
-    height: 70px;
-    margin-right: auto;
-    padding-left: 15%;
-
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 3px;
 }
 
 .MainMenu {
