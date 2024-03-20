@@ -10,6 +10,15 @@ body{
     min-height: 125vh;
 }
 
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+     footer{
+        width: 111% !important;
+    }
+}
+
 header{
     display: flex;
     position: relative;
@@ -81,6 +90,6 @@ footer > a{
 }
 
 footer > a:hover{
-color: #818181;
+    color: #818181;
 }
 

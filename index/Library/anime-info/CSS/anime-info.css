@@ -9,6 +9,18 @@ body{
     grid-template-rows: auto 1fr auto;
 }
 
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+     footer{
+        width: 111% !important;
+    }
+    .ani-info{
+        margin: 0 !important;
+    }
+}
+
 header{
     display: flex;
     position: relative;
@@ -110,7 +122,7 @@ footer > a{
 }
 
 footer > a:hover{
-color: #818181;
+  color: #818181;
 }
 
 
