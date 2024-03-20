@@ -8,29 +8,40 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 125vh;
+    max-width: 100%;
 }
 
 @media (max-width: 600px) {
     body {
-        font-size: 3vw;
         overflow-x: hidden;
-
     }
-    .MainText{
+    #MainText{
         text-align: center;
+        font-size: 50px !important;
     }
-
+    .MainMenu{
+        left: 0 !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .MainMenu > p{
+        left: 0 !important;
+    }
+    footer{
+        width: 111% !important;
+    }
 }
+
 
 header{
     display: flex;
+    position: relative;
     width: 100%;
     background-color: azure;
     align-items: center;
     justify-content: space-evenly;
     height: min-content;
-    position: relative;
-    top: 0;
+    padding: 22px;
 }
 
 header > a{
@@ -39,7 +50,6 @@ header > a{
     color: #000;
     font-family: "Lato";
     text-align: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -49,11 +59,12 @@ header > a:hover{
 }
 
 #HeaderImg{
-    display: flex;
     width: 60px;
     height: 60px;
-    position: relative;
-    left: 3px;
+    align-self: flex-start;
+    position: absolute;
+    left: 5px;
+    top: 0px
 }
 
 .MainMenu {
@@ -77,10 +88,9 @@ header > a:hover{
     font-size: 20px;
     text-align: center;
     padding-top: 3vh;
-    position: fixed;
-    bottom: 15vh;
-    left: 13%;
-    right: 9%;
+    position: absolute;
+    text-align: center;
+    bottom: 20%;
     text-shadow:  
    -1px -1px azure,  
     1px -1px azure,
@@ -93,7 +103,7 @@ header > a:hover{
     flex-wrap: wrap;
     position: fixed;
     font-family: "Madimi One", sans-serif;
-    font-size: 450%;
+    font-size: 80px;
     text-align: center;
 }
 

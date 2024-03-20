@@ -10,27 +10,15 @@ body{
     min-height: 50vh;
 }
 
-@media (max-width: 600px) {
-    body {
-        font-size: 3vw;
-        overflow-x: hidden;
-
-    }
-    .MainText{
-        text-align: center;
-    }
-
-}
-
 header{
     display: flex;
+    position: relative;
     width: 100%;
     background-color: azure;
     align-items: center;
     justify-content: space-evenly;
     height: min-content;
-    position: relative;
-    top: 0;
+    padding: 22px;
 }
 
 header > a{
@@ -39,7 +27,6 @@ header > a{
     color: #000;
     font-family: "Lato";
     text-align: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -49,12 +36,12 @@ header > a:hover{
 }
 
 #HeaderImg{
-    display: flex;
     width: 60px;
     height: 60px;
     align-self: flex-start;
-    position: relative;
-    left: 3px;
+    position: absolute;
+    left: 5px;
+    top: 0px
 }
 
 h1{
