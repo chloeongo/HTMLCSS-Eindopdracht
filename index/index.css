@@ -1,133 +1,128 @@
-body{
-    background-image: url(images/background.png);
-    background-size: cover;
-    margin: 0;
-    overflow-x: hidden;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 125vh;
-    max-width: 100%;
+body {
+  background-image: url(images/background.png);
+  background-size: cover;
+  margin: 0;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 125vh;
+  max-width: 100%;
 }
 
 @media (max-width: 600px) {
-    body {
-        overflow-x: hidden;
-    }
-    #MainText{
-        text-align: center;
-        font-size: 50px !important;
-    }
-    .MainMenu{
-        left: 0 !important;
-        width: 100% !important;
-        padding: 0 !important;
-    }
-    .MainMenu > p{
-        left: 0 !important;
-    }
-    footer{
-        width: 111% !important;
-    }
-}
-
-
-header{
-    display: flex;
-    position: relative;
-    width: 100%;
-    background-color: azure;
-    align-items: center;
-    justify-content: space-evenly;
-    height: min-content;
-    padding: 22px;
-}
-
-header > a{
-    display: flex;
-    text-decoration: none;
-    color: #000;
-    font-family: "Lato";
+  body {
+    overflow-x: hidden;
+  }
+  #MainText {
     text-align: center;
-    flex-wrap: wrap;
+    font-size: 50px !important;
+  }
+  .MainMenu {
+    left: 0 !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .MainMenu > p {
+    left: 0 !important;
+  }
+  footer {
+    width: 111% !important;
+  }
 }
 
-header > a:hover{
-    color: #818181;
-    cursor: pointer;
+header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: azure;
+  align-items: center;
+  justify-content: space-evenly;
+  height: min-content;
+  padding: 22px;
 }
 
-#HeaderImg{
-    width: 60px;
-    height: 60px;
-    align-self: flex-start;
-    position: absolute;
-    left: 5px;
-    top: 0px
+header > a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  font-family: "Lato";
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+header > a:hover {
+  color: #818181;
+  cursor: pointer;
+}
+
+#HeaderImg {
+  width: 60px;
+  height: 60px;
+  align-self: flex-start;
+  position: absolute;
+  left: 5px;
+  top: 0px;
 }
 
 .MainMenu {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    left: 6%;
-    right: 5%;
-    padding: 20px;
-    width: 85%;
-    height: 30rem;
-    background-color: rgba(240, 255, 255, 0.5);
-    border-radius: 20rem 20rem 0 0;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 6%;
+  right: 5%;
+  padding: 20px;
+  width: 85%;
+  height: 50vh;
+  background-color: rgba(240, 255, 255, 0.5);
+  border-radius: 20rem 20rem 0 0;
 }
 
-.MainMenu > p{
-    display: flex;
-    flex-wrap: wrap;
-    font-family: "Lato";
-    font-size: 20px;
-    text-align: center;
-    padding-top: 3vh;
-    position: absolute;
-    text-align: center;
-    bottom: 20%;
-    text-shadow:  
-   -1px -1px azure,  
-    1px -1px azure,
-   -1px  1px azure,
-    1px  1px azure;
+.MainMenu > p {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Lato";
+  font-size: 20px;
+  text-align: center;
+  padding-top: 3vh;
+  position: absolute;
+  text-align: center;
+  bottom: 20%;
+  text-shadow: -1px -1px azure, 1px -1px azure, -1px 1px azure, 1px 1px azure;
 }
 
-#MainText{
-    display: flex;
-    flex-wrap: wrap;
-    position: fixed;
-    font-family: "Madimi One", sans-serif;
-    font-size: 80px;
-    text-align: center;
+#MainText {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  font-family: "Madimi One", sans-serif;
+  font-size: 80px;
+  text-align: center;
 }
 
-footer{
-    display: flex;
-    background-color: azure;
-    align-items: center;
-    justify-content: space-evenly;
-    height: min-content;
-    position: relative;
-    width: 100%;
-    bottom: 0;
+footer {
+  display: flex;
+  background-color: azure;
+  align-items: center;
+  justify-content: space-evenly;
+  height: min-content;
+  position: relative;
+  width: 100%;
+  bottom: 0;
 }
 
-footer > a{
-    display: flex;
-    text-decoration: none;
-    color: #000;
-    font-family: "Lato";
-    text-align: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+footer > a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  font-family: "Lato";
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-footer > a:hover{
-    color: #818181;
+footer > a:hover {
+  color: #818181;
 }

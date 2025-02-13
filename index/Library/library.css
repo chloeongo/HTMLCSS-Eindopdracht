@@ -1,95 +1,93 @@
-body{
-    background-image: url(../images/aotbg.png);
-    background-size: cover;
-    margin: 0;
-    overflow-x: hidden;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 125vh;
+body {
+  background-image: url(../images/aotbg.png);
+  background-size: cover;
+  margin: 0;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 125vh;
 }
 
 @media (max-width: 600px) {
-    body {
-        overflow-x: hidden;
-    }
-     footer{
-        width: 111% !important;
-    }
+  body {
+    overflow-x: hidden;
+  }
+  footer {
+    width: 111% !important;
+  }
 }
 
-header{
-    display: flex;
-    position: relative;
-    width: 100%;
-    background-color: azure;
-    align-items: center;
-    justify-content: space-evenly;
-    height: min-content;
-    padding: 22px;
+header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: azure;
+  align-items: center;
+  justify-content: space-evenly;
+  height: min-content;
+  padding: 22px;
 }
 
-header > a{
-    display: flex;
-    text-decoration: none;
-    color: #000;
-    font-family: "Lato";
-    text-align: center;
-    flex-wrap: wrap;
+header > a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  font-family: "Lato";
+  text-align: center;
+  flex-wrap: wrap;
 }
 
-header > a:hover{
-    color: #818181;
-    cursor: pointer;
+header > a:hover {
+  color: #818181;
+  cursor: pointer;
 }
 
-#HeaderImg{
-    width: 60px;
-    height: 60px;
-    align-self: flex-start;
-    position: absolute;
-    left: 5px;
-    top: 0px
+#HeaderImg {
+  width: 60px;
+  height: 60px;
+  align-self: flex-start;
+  position: absolute;
+  left: 5px;
+  top: 0px;
 }
 
 .gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.ani-pic {
-    width: 280px;
-    height: 425px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.gallery img {
+  width: 280px;
+  height: 425px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-
-footer{
-    display: flex;
-    background-color: azure;
-    align-items: center;
-    justify-content: space-evenly;
-    height: min-content;
-    position: relative;
-    width: 100%;
-    bottom: 0;
+footer {
+  display: flex;
+  background-color: azure;
+  align-items: center;
+  justify-content: space-evenly;
+  height: min-content;
+  position: relative;
+  width: 100%;
+  bottom: 0;
 }
 
-footer > a{
-    display: flex;
-    text-decoration: none;
-    color: #000;
-    font-family: "Lato";
-    text-align: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+footer > a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  font-family: "Lato";
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-footer > a:hover{
-    color: #818181;
+footer > a:hover {
+  color: #818181;
 }
-
